@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>החכם שבבית</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+  <style>
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at top left, #cceeff, #ffffff);
+      z-index: -1;
+      animation: gradientShift 15s ease infinite;
+    }
+
+    @keyframes gradientShift {
+      0% { background: radial-gradient(circle at top left, #cceeff, #ffffff); }
+      50% { background: radial-gradient(circle at bottom right, #e0f7fa, #ffffff); }
+      100% { background: radial-gradient(circle at top left, #cceeff, #ffffff); }
+    }
+
+    .package {
+      animation: zoomIn 1s ease forwards;
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.95); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .contact-button {
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0faff;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      animation: fadeIn 1s ease-in;
+    }
+    header {
+      background: linear-gradient(90deg, #00ffcc, #0066ff);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      animation: slideDown 1s ease-in-out;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      font-family: 'Rubik Glitch', cursive;
+      letter-spacing: 2px;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 2s ease-in-out;
+    }
+    h2 {
+      color: #0066ff;
+    }
+    .package {
+      margin-bottom: 2rem;
+      padding: 1rem;
+      border: 2px solid #00cc99;
+      border-radius: 8px;
+      background-color: #e6ffff;
+      transition: transform 0.3s;
+    }
+    .package:hover {
+      transform: scale(1.03);
+    }
+    .package h3 {
+      margin-top: 0;
+      color: #004d66;
+    }
+    ul {
+      padding-right: 1.2rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #777;
+    }
+    .contact-button {
+      display: inline-block;
+      background-color: #27ae60;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      transition: background-color 0.3s;
+    }
+    .contact-button:hover {
+      background-color: #1e874b;
+    }
+    .extras {
+      margin-top: 2rem;
+      padding: 1rem;
+      background-color: #d9f9ff;
+      border: 1px dashed #0099cc;
+      border-radius: 8px;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>החכם שבבית</h1>
+    <p>בית חכם במחיר שפוי</p>
+  </header>
+  <section>
+    <h2>התקנת בית חכם - החבילות שלנו:</h2>
+
+    <div class="package">
+      <h3>חבילת בסיס – 299 ש"ח</h3>
+      <ul>
+        <li>שליטה על 3 אורות (כולל צבעוניים)</li>
+        <li>חיישן פתיחת דלת</li>
+        <li>התקנה מלאה + הסבר לאפליקציה</li>
+      </ul>
+    </div>
+
+    <div class="package">
+      <h3>חבילת מתקדמת – 399 ש"ח</h3>
+      <ul>
+        <li>5 אורות חכמים (כולל למטבח)</li>
+        <li>2 שקעים חכמים</li>
+        <li>2 חיישני פתיחת דלת</li>
+        <li>התקנה מלאה + הסבר</li>
+      </ul>
+    </div>
+
+    <div class="package">
+      <h3>חבילת פרימיום – 699 ש"ח</h3>
+      <ul>
+        <li>7 אורות חכמים (כולל מטבח וחצר)</li>
+        <li>2 שקעים חכמים</li>
+        <li>שליטה על מזגן</li>
+        <li>3 חיישני פתיחת דלתות</li>
+        <li>אורות חיצוניים לחצר עם לוחות סולאריים</li>
+        <li>התקנה מלאה + תמיכה</li>
+      </ul>
+    </div>
+
+    <div class="extras">
+      <h3>תוספות אפשריות:</h3>
+      <ul>
+        <li>מצלמות אבטחה</li>
+        <li>מערכות טלקום וניהול גישה</li>
+        <li>אורות מעוצבים וסגנונות מיוחדים</li>
+        <li>ועוד – לפי דרישה אישית</li>
+      </ul>
+    </div>
+
+    <a class="contact-button" href="https://wa.me/972536212940" target="_blank">דברו איתי עכשיו בוואטסאפ</a>
+  </section>
+  <footer>
+    <p>© 2025 החכם שבבית | כל הזכויות שמורות</p>
+  </footer>
+</body>
+</html>
